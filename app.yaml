@@ -1,0 +1,14 @@
+runtime: go
+api_version: go1.8
+
+handlers:
+  - url: /public/third_party
+    static_dir: public/third_party
+    mime_type: application/javascript
+
+  - url: /public/dist
+    static_dir: public/dist
+    mime_type: application/javascript
+
+  - url: /.*
+    script: _go_app
