@@ -10,5 +10,9 @@ handlers:
     static_dir: public/dist
     mime_type: application/javascript
 
+  - url: /public/textures/cube/Park3Med/(.*)
+    static_files: public/textures/cube/Park3Med/\1
+    upload: public/textures/cube/Park3Med/.*
+
   - url: /.*
     script: _go_app
